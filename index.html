@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Eyes</title>
+
+    <link rel="apple-touch-icon" href="/images/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png">  
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+</head>
+
+<body>
+    
+    <!-- header inofmation-->
+  
+            <header>
+                <div class="header__content">
+                    <i class="fa fa-envelope"></i>
+                    <a class="header__link" href="mailto:tranxuanthanhtxt2002@gamil.com">prettyeyes@fashion.com</a>
+                    <i class="fa fa-phone"></i>
+                    <a class="header__link" href="tel:0936867190">+84-936-867-190</a>
+                </div>
+                <div class="header__content">
+                    <a class="header__link" href="https://www.facebook.com/el.kham.7/" target="_blank"><i class="fab fa-facebook-f fa-sm fa-fw me-3"></i></a>
+                    <a class="header__link" href="https://www.instagram.com/kham2169/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-3"></i></a>
+                    <a class="header__link" href="https://www.youtube.com/@tranxuanthanh2002" target="_blank"><i class="fab fa-youtube fa-sm fa-fw me-3"></i></a>
+                    <a class="header__link" href="https://www.tiktok.com/@tranthanh042002?lang=vi-VN" target="_blank"><i class="fab fa-tiktok fa-sm fa-fw"></i></a>
+                </div>
+            </header>
+
+    <!-- end header inofmation -->
+
+    
+
+    <!-- menu -->
+    <nav class="nav-main">
+        <!-- menu mobile -->
+        <label for="nav_mobile-input" class="nav_bars_btn" >
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" hidden name="" class="nav_input" id="nav_mobile-input">       
+        <label for="nav_mobile-input" class="nav_overlay"></label>
+        <nav class="nav_mobile">
+            <label for="nav_mobile-input" class="nav_moblie_close">
+                 <i class="fa-sharp fa-solid fa-xmark" style="font-size: 40px;"></i>
+            </label>
+            <div class="logo_mobile">
+                <a href="/index.html"><img src="/images/logo.png" alt="logo" width="80px"></a>
+            </div>  
+            <ul class="nav_mobile_list">
+                <li><a href="/index.html" class="nav_mobile_link"><i class="fa-sharp fa-solid fa-house"></i>Trang chủ</a></li>
+                <li class="menu-item-has-children" id="list-item-parent">
+                    <a href="#" class="nav_mobile_link d-inline-block " onclick="toggleSubMenu()">
+                        <i class="fa-solid fa-list"></i>Danh mục sản phẩm 
+                        <i class="fa-solid fa-angle-down ms-3" id="icon-down-list-menu"></i></a>
+                   <ul class="sub_mobile_list" id ="sub-menu-mobile">
+                    <li><a href="#" class="nav_mobile_link nav_mobile_link_drop"><i class="fa-solid fa-sun"></i> Kính mát</a></li>
+                    <li><a href="#" class="nav_mobile_link nav_mobile_link_drop"><i class="fa-solid fa-glasses"></i>Gọng kính</a></li>
+                    <li><a href="#" class="nav_mobile_link nav_mobile_link_drop"><i class="fa-solid fa-eye"></i> Kính áp tròng</a></li>
+                    <li><a href="#" class="nav_mobile_link nav_mobile_link_drop"><i class="fa-solid fa-display"></i></i> Kính chống ánh sáng xanh</a></li>
+                   </ul>
+                </li>
+                <li><a href="" class="nav_mobile_link"> <i class="fa-solid fa-rectangle-ad"></i>Khuyễn mãi</a></li>
+                <li><a href="" class="nav_mobile_link"><i class="fa-solid fa-trademark"></i> Thương hiệu</a></li>
+                <li><a href="" class="nav_mobile_link"><i class="fa-solid fa-id-card"></i>Liên hệ</a></li>
+                <li><a href="" class="nav_mobile_link"><i class="fa-solid fa-store"></i>Hệ thống cửa hàng</a></li>
+                <li><a href="" class="nav_mobile_link"><i class="fa-solid fa-calendar-check"></i>Đặt lịch khám mắt</a></li>
+                <li><a href="" class="nav_mobile_link"><i class="fa-sharp fa-solid fa-person-chalkboard"></i>Giới thiệu</a></li>
+                <li><a href="" class="nav_mobile_link"><i class="fa-solid fa-user"></i>Đăng nhập</a></li>
+            </ul>
+        </nav>
+
+        <!-- end menu mobile -->
+
+        <!-- menu  pc -->
+        <div class="logo ">
+            <a href="index.html"><img src="/images/logo.png" alt="logo" width="80px"></a>
+        </div>
+        
+
+      
+            <ul class="main-menu">
+                <li>
+                    <a href="">Kính mát</a>
+                    <ul class="sub-menu">
+                        <li><a href="/Home/KinhMat">Bán chạy nhất</a></li>
+                        <li>
+                            <a href="">Giới tính</a>
+                            <ul class="sub-menu">
+                                <li><a href="/Home/KinhMat">Nam</a></li>
+                                <li><a href="/Home/KinhMat">Nữ</a></li>
+                                <li><a href="/Home/KinhMat">Trẻ em</a></li>
+                                <li><a href="/Home/KinhMat">Unisex</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Kiểu dáng</a>
+                            <ul class="sub-menu">
+                                <li><a href="/Home/KinhMat">Kính Oval</a></li>
+                                <li><a href="/Home/KinhMat">Kính tròn</a></li>
+                                <li><a href="/Home/KinhMat">Kính vuông</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Gọng kính</a>
+                    <ul class="sub-menu">
+                        <li><a href="/Home/GongKinh">Bán chạy nhất</a></li>
+                        <li>
+                            <a href="/Home/GongKinh">Giới tính</a>
+                            <ul class="sub-menu">
+                                <li><a href="/Home/GongKinh">Nam</a></li>
+                                <li><a href="/Home/GongKinh">Nữ</a></li>
+                                <li><a href="/Home/GongKinh">Trẻ em</a></li>
+                                <li><a href="/Home/GongKinh">Unisex</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Kính áp tròng</a>
+                    <ul class="sub-menu">
+                        <li><a href="/Home/KinhApTrong">Lens ngày</a></li>
+                        <li><a href="/Home/KinhApTrong">Lens tuần</a></li>
+                        <li><a href="/Home/KinhApTrong">Len tháng</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Kính chống ánh sáng xanh</a></li>
+                <li><a href="">Giới thiệu</a></li>
+            </ul>
+        </div>
+                
+
+        <div class="menu__icon">
+            <a class="nav-icon  text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                <i class="fa-solid fa-magnifying-glass text-dark"></i>
+            </a>     
+            <a class="nav-icon " href="#">
+                <i class="fa fa-fw fa-user"></i>
+                <span>+99</span>
+            </a>
+            <a class="nav-icon" href="#">
+                <i class="fa fa-fw fa-cart-arrow-down"></i>
+                <span >7</span>
+            </a>
+        </div>
+    </nav>
+    
+    <!-- end menu -->
+
+  
+
+    <!-- end model search -->
+
+    <!-- card product -->
+    <div class="card__product">
+        <div class="card__heart">
+            20%
+        </div>
+        <div class="card__cart">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="card__img">
+            <img src="/images/Nike Zoom KD 12.png" alt="">
+        </div>
+        <div class="card__title">
+            Nike Zoom KD 12
+        </div>
+        <div class="card__price">
+            $99
+        </div>
+
+        <div class="card__size">
+            <h3>Size:</h3>
+            <span>38</span>
+            <span>39</span>
+            <span>40</span>
+            <span>41</span>
+        </div>
+        <div class="card__color">
+            <h3>Color:</h3>
+            <span class="green"></span>
+            <span class="red"></span>
+            <span class="black"></span>
+            <span class="white"></span>
+           
+        </div>
+        <div class="card__action">
+            <button>Buy now</button>
+            <button>Add cart</button>
+        </div>
+    </div>
+    <!-- Start Script -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <!-- End Script -->
+
+    <script>
+        $(document).ready(function() {
+            $('.sub-menu').parent('li').addClass('has-child');  
+        });
+
+   
+        function toggleSubMenu() {
+            const subMenu = document.getElementById("sub-menu-mobile");
+            const listItemParent = document.getElementById("list-item-parent");
+            const iconDown = document.getElementById("icon-down-list-menu");
+            listItemParent.classList.toggle("expanded");
+            subMenu.style.display = listItemParent.classList.contains("expanded") ? "block" : "none";
+            iconDown.classList.toggle("rotate-down");
+        }
+
+    </script>
+</body>
+
+</html>

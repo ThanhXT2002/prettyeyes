@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Define a class for the arrow icon */
+.arrow-icon {
+    /* Add your arrow icon styles here, e.g., using font icons or SVG */
+    /* For this example, I'll use a simple CSS arrow */
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out; /* Add a transition for smooth rotation */
+}
+
+/* Define a class for the rotated arrow icon */
+.arrow-icon.rotated {
+    transform: rotate(180deg); /* Rotate the arrow by 180 degrees */
+}
+
+/* Add styles for the sub-menu */
+.sub-menu {
+    display: none; /* Hide the sub-menu by default */
+}
+
+/* Show the sub-menu when hovering over the parent <li> */
+li:hover .sub-menu {
+    display: block;
+}
+
+/* Rotate the arrow icon by 180 degrees when hovering over the parent <li> */
+li:hover > a .arrow-icon {
+    transform: rotate(180deg);
+}
+    </style>
+</head>
+<body>
+    <ul class="main-menu">
+        <li>
+            <a href="">Kính mát <span class="arrow-icon"></span></a>
+            <ul class="sub-menu">
+                <li><a href="/Home/KinhMat">Bán chạy nhất</a></li>
+                <li>
+                    <a href="">Giới tính</a>
+                    <ul class="sub-menu">
+                        <li><a href="/Home/KinhMat">Nam</a></li>
+                        <li><a href="/Home/KinhMat">Nữ</a></li>
+                        <li><a href="/Home/KinhMat">Trẻ em</a></li>
+                        <li><a href="/Home/KinhMat">Unisex</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Kiểu dáng</a>
+                    <ul class="sub-menu">
+                        <li><a href="/Home/KinhMat">Kính Oval</a></li>
+                        <li><a href="/Home/KinhMat">Kính tròn</a></li>
+                        <li><a href="/Home/KinhMat">Kính vuông</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <!-- Other menu items -->
+    </ul>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Function to handle the icon rotation on hover
+    function rotateIcon() {
+        $(this).find('.arrow-icon').toggleClass('rotated');
+    }
+
+    // Add event handlers for hover and click on menu items
+    $('.main-menu > li').hover(rotateIcon);
+    $('.main-menu > li > a').click(rotateIcon);
+});
+</script>
+</body>
+</html>
